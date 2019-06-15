@@ -2,7 +2,9 @@ def find_element_index(array, value_to_find)
   i=0
   while i<array.length do
     car = array[i].include? value_to_find
-    if
+    if car = true
+      return array[i]
+    end
     i+=1
   end
 end
